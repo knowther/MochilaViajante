@@ -1,0 +1,51 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 40px 40px 20px 20px;
+}
+
+.page-title{
+    color: #d6b830;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-title:hover{
+    color: #d6b8308a;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+
+}
+
+.page-subtitle{
+    text-align: center;
+    color: blueviolet;
+    text-shadow: red;
+}
+
+
+
+table, thead{
+    text-align: left;
+    border: 1px black solid;
+}
+
+thead tr th{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+tbody tr:hover{
+    background-color: aqua;
+    cursor: pointer;
+
+}
+
+td{
+    border-right: 1px solid black;
+}
