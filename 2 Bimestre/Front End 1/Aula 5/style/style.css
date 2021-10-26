@@ -49,3 +49,7 @@ tbody tr:hover{
 td{
     border-right: 1px solid black;
 }
+
+footer{
+    background-color: #CEE;
+}
