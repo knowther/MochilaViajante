@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+#logo{
+    margin-left: 20px;
+}
+
+.main-title, .score{
+    color: #E8EAED;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+.subtitle{
+    margin-left: 20px;
+    color: lightskyblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    text-align: center;
+    height: 200px;
+    background-image: url('https://imagensemoldes.com.br/wp-content/uploads/2020/06/Desenho-Pipoca-de-Cinema-PNG.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.showimg{
+    text-align: center;
+    
+
+}
+
+.imgs{
+    box-shadow: 0 0 10px #000000;
+    border-radius: 50px;
+
+}
+
+body{
+    background-color: #35363A;
+}
+
+p{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
