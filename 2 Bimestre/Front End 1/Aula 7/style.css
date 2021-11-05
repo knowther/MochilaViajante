@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-image: url("https://www.einerd.com.br/wp-content/uploads/2020/06/How-I-Met-Your-Mother-capa.jpg");
+    background-size: cover;
+    text-align: center;
+
+}
+
+.imagem{
+    
+  
+}
+
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: azure;
+}
+
+button:hover{
+    background-color: red;
+}
