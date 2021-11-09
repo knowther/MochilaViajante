@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 2000px;
+}
+
+header{
+    background-color: brown;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    z-index: 2;
+}
+
+.square{
+    width: 400px;
+    height: 400px;
+    
+    margin-bottom: 12px;
+}
+
+.first-square{
+    background-color: red;
+}
+
+.second-square{
+
+    background-color: purple;
+    position: relative;
+    left: 40px;
+}
+
+.third-square{
+    background-color: blue;
+    
+}
