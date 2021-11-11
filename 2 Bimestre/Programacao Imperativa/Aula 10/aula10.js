@@ -42,7 +42,9 @@ console.log(lista.includes("Johnny") || lista2.includes("Johnny"))
 
 console.log(inverterArray(lista));
 
-somarArray();
+numArray = [20, 20, 20, 19];
+
+console.log(somarArray(numArray));
 
 
 function inverterArray(lista = []){
@@ -52,12 +54,15 @@ function inverterArray(lista = []){
 
 function somarArray(numArray = []){
 
+    let sum= 0;
 
-}
+  numArray.forEach(function(n){
+      sum += n;
+  }) 
 
-function somarCadaIndice(value){
 
-    return value;
+
+  return sum;
 
 }
 
