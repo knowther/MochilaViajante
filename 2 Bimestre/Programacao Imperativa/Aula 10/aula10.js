@@ -53,7 +53,6 @@ function inverterArray(lista = []){
 function somarArray(numArray = []){
 
 
-
 }
 
 function somarCadaIndice(value){
