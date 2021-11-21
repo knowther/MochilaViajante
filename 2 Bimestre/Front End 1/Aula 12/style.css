@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: grey;
+    padding: 18px;
+}
+
+label{
+    font-size: 16px;
+}
+
+input{
+    border: none;
+    background-color: rgb(218, 218, 218);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+form{
+    position: relative;
+    top: 20px;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input:focus{
+    transition: .4s;
+    background-color: rgb(230, 230, 230);
+}
+
+.intro{
+    text-align: center;
+}
+
+.inpName:disabled{
+    background-color: #aaa;
+    width: 150px;
+}
+inpName:enabled{
+    width: 200px;
+}
+
+.intro::first-letter{
+    font-size: 32px;
+}
+.mainList{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+}
+
+.mainList li:nth-child(2){
+ color: red;
+}
+
+.customCheckbox{
+    width: 15px;
+    height: 15px;
+    transition: .4s;
+}
+
+.customCheckbox:checked{
+    width: 20px;
+    height: 20px;
+}
+
+
+.mainButton{
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    background-color: #489769;
+    border-radius: 12px;
+    transition: .5s;
+}
+
+.mainButton:hover{
+    border-radius: 32px;
+    background-color: tomato;
+}
