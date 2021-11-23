@@ -20,9 +20,26 @@ let banco = {
     new ContaBancaria(2138105881,	'Conta Poupança',	33196,	'Bendite Huggett')
     ],
     consultarCliente : function(titularAcc){
-        console.log(this.clientes.find(titularAcc => ContaBancaria.titular === titularAcc))
+      return this.clientes.find(obj => obj.titular === titularAcc)
+    },
+
+    deposito : function(titularAcc, qntDeposito){
+       return `Depósito realizado, seu novo saldo é: ${this.clientes.find(obj => obj.titular === titularAcc).saldo+=qntDeposito}`;
+    },
+    saque: function(titularAcc, qntSaque){
+        
+        let newSaldo = this.clientes.find(obj => obj.titular === titularAcc).saldo-=qntSaque;
+        if(newSaldo < 0){
+            console.log("Fundos Insuficientes");
+        }else{
+            return console.log('Extração feita com sucesso, seu novo saldo é: ' + newSaldo);
+        }
+        
     }
 }
 
 
 console.log(banco.consultarCliente("Jacki Shurmer"));
+console.log(banco.deposito("Jacki Shurmer", 80000));
+console.log(banco.saque("Jacki Shurmer", 8000));
+
