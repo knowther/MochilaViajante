@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul{
+    background-color: rgb(29, 26, 26);
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding: 32px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+ul a{
+    color: white;
+}
+
+.video{
+    width: 400px;
+    transition: .8s ease-in-out;
+}
+
+.video img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.videos{
+    margin-top: 120px;
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.videos .video:hover{
+    transform: scale(1.05);
+    
+}
