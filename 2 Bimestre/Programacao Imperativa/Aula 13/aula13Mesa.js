@@ -30,9 +30,9 @@ let banco = {
         
         let newSaldo = this.clientes.find(obj => obj.titular === titularAcc).saldo-=qntSaque;
         if(newSaldo < 0){
-            console.log("Fundos Insuficientes");
+            return"Fundos Insuficientes";
         }else{
-            return console.log('Extração feita com sucesso, seu novo saldo é: ' + newSaldo);
+            return 'Extração feita com sucesso, seu novo saldo é: ' + newSaldo;
         }
         
     }
