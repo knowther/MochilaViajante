@@ -38,7 +38,6 @@ let banco = {
     }
 }
 
-
 console.log(banco.consultarCliente("Jacki Shurmer"));
 console.log(banco.deposito("Jacki Shurmer", 80000));
 console.log(banco.saque("Jacki Shurmer", 8000));
