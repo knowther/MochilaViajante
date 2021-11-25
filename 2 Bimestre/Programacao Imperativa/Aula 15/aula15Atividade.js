@@ -24,29 +24,26 @@ OBJETO DO CLIENTE QUE CORRESPONDE A ESSE NOME INSERIDO.
 */
 
 
-function ContaBancaria(numero, tipoConta, saldo, titular){
-    this.numero = numero;
-    this.tipoConta = tipoConta;
-    this.saldo = saldo;
-    this.titular = titular;
-}
 
 let contas = [
-    new ContaBancaria(5486273622, 'Conta Corrente', 27771, 'Abigael Natte'),
-    new ContaBancaria(1183971869, 'Conta Poupança', 8675, 'Ramon Connell'),
-    new ContaBancaria(9582019689, 'Conta Poupança', 27363, 'Jarret Lafuente'),
-    new ContaBancaria(1761924656, 'Conta Poupança', 32415, 'Ansel Ardley'),
-    new ContaBancaria(7401971607, 'Conta Poupança', 18789, 'Jacki Shurmer'),
-    new ContaBancaria(630841470, 'Conta Corrente', 28776, 'Jobi Mawtus'),
-    new ContaBancaria(4223508636, 'Conta Corrente', 2177, 'Thomasin Latour'),
-    new ContaBancaria(185979521,	'Conta Poupança',	25994, 'Lonnie Verheijden'),
-    new ContaBancaria(3151956165,	'Conta Corrente',	7601, 'Alonso Wannan'),
-    new ContaBancaria(2138105881,	'Conta Poupança',	33196,	'Bendite Huggett')
+    {"numero" : 5486273622, "tipoConta": "Conta Corrente", "saldo": 27771, "titular" : "Abigael Natte"},
+    {"numero" : 1183971869, "tipoConta": "Conta Poupança", "saldo": 8675, "titular" : "Ramon Connell"},
+    {"numero" : 9582019689, "tipoConta": "Conta Poupança", "saldo": 27363, "titular" : "Jarret Lafuente"},
+    {"numero" : 1761924656, "tipoConta": "Conta Poupança", "saldo": 32415, "titular" : "Ansel Ardley"},
+    {"numero" : 7401971607, "tipoConta": "Conta Poupança", "saldo": 18789, "titular" : "Jacki Shurmer"},
+    {"numero" : 630841470, "tipoConta": "Conta Poupança", "saldo": 28776, "titular" : "Jobi Mawtus"},
+    {"numero" : 4223508636, "tipoConta": "Conta Poupança", "saldo": 2177, "titular" : "Thomasin Latour"},
+    {"numero" : 185979521, "tipoConta": "Conta Poupança", "saldo": 25994, "titular" : "Lonnie Verheijden"},
+    {"numero" : 3151956165, "tipoConta": "Conta Corrente", "saldo": 7601, "titular" : "Alonso Wannan"},
+    {"numero" : 2138105881, "tipoConta": "Conta Poupança", "saldo": 33196, "titular" : "Jarret Lafuente"}
 ]
-
- JsonArray = JSON.stringify(contas)
-
+   
 
 
-module.exports = JsonArray;
+// let JsonArray = [];
+
+// for(let i = 0; i < contas.length; i++){
+//     JsonArray.push(JSON.stringify(contas[i])) 
+// }
+module.exports = contas;
 
