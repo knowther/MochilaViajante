@@ -1,9 +1,11 @@
-const Aluno = require("./estudante")
+const Aluno = require('./modulo');
 
-let estudantes = [
-    new Aluno("Pedro", 2, [8.7,8.3,6]),
-    new Aluno("Elias", 4, [9,7.3,7]),
-    new Aluno("Elena", 1, [8.7,8.3,6])
+let arrayAlunos = [
+    new Aluno("Daniel Fontoura", 2, [8.7,8.4,6]),
+    new Aluno("Gabriel Rizzo", 1, [7.2,6.4,4]),
+    new Aluno("Thiago Vilela", 3, [6.2,6.7,7.2]),
+    new Aluno("Vinicius Almeida", 4, [8.7,7.1,7.3])
+
 ]
 
-module.exports = estudantes;
+module.exports = arrayAlunos

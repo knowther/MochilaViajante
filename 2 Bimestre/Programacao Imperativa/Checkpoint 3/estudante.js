@@ -2,10 +2,10 @@
 
 // Crie um objeto aluno que tenha como atributos: nome (string), quantidade de faltas (number) e notas (array de números). Crie um construtor para ele e importe-o como o módulo aluno.
 
-const Aluno = require("./modulo");
+// const Aluno = require("./modulo");
 
 let AlunoObj = {
-    aluno : new Aluno("Pedro", 6, [8.7,8.3,6]),
+    aluno : new Aluno("Pedro", 6, [8.7,8.4,6]),
     calcularMedia : function(){
     let qntNotas = this.aluno.notas.length;
     let totalNotas = this.aluno.notas.reduce((firstV, currV) => {
