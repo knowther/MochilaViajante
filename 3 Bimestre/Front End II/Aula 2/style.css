@@ -1,0 +1,22 @@
+body {
+
+}
+
+.pickone{
+   display: flex;
+}
+
+#initialTitle {
+  text-align: center;
+  display: block;
+  animation-name: rise;
+  animation-duration: 0.5s;
+  transition: 0.2s ease-in-out;
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
