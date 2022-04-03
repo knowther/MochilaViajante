@@ -5,4 +5,4 @@ const dividir = require("./divisao");
 
 let calculadora = (valor1, valor2, operacao) => console.log(operacao(valor1, valor2)); 
 
-calculadora(5, 2, multiplicar);
+calculadora(5, 2, subtrair);
