@@ -18,7 +18,7 @@ function loopDeImpares(num, palavra){
     }
 }
 
-// loopDeImpares(1, 'impar')
+loopDeImpares(1, 'impar')
 
 
 function soma(num){

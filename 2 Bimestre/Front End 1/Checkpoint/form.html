@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/form.css">
+    <title>Registro de Turismo</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="./img/6708386_preview.png" alt="">
+        <div class="infinite">
+            <div class="shadow"></div>
+        </div>
+    </div>
+    <main>
+        <div class="forms">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="birthName">Nome:</label>
+                    <label for="birthSurname">Sobrenome:</label>
+                    <input type="text" name="birthName" id="birthName">
+                    <input type="text" name="birthSurname" id="birthSurname">
+                    <label for="cpf">CPF:</label>
+                    <label for=""></label>
+                    <input type="text" name="cpf" id="cpf">
+
+                </fieldset>
+                <fieldset>
+                    <legend>Dados da Viagem</legend>
+                    <input type="datetime-local" name="travelDate" class="travelDate">
+                    <select name="places" id="places">
+                        <optgroup label="Trilhas"></optgroup>
+                        <option value="">Tilha das vielas</option>
+                        <option value="">Trilha da catarata</option>
+                        <optgroup label="Compras"></optgroup>
+                        <option value="">Shopping Carpina</option>
+                        <option value="">Shopping Mata Norte</option>
+                    </select>
+                    <select name="times" id="times">
+                        <optgroup label="08:00 - 12:00"></optgroup>
+                        <option value="">08:00 ás 10:00</option>
+                        <option value="">10:00 ás 12:00</option>
+                        <optgroup label="14:00 - 18:00"></optgroup>
+                    </select>
+                    <label for="obs">Observações:</label>
+                    <textarea name="obs" id="obs" rows="8" wrap="soft"></textarea>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

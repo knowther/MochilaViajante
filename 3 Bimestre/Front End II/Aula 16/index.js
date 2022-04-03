@@ -3,7 +3,7 @@ const baseDeDados = {
     {
       genero: "masculino",
       nome: {
-        titulo: "sr",
+        titulo: "Sr",
         primeiro: "David",
         ultimo: "Fernando",
       },
@@ -78,16 +78,19 @@ let consultaBaseDeDados = new Promise((resolve, reject) => {
 
 consultaBaseDeDados
   .then((resposta) => {
-    console.log(resposta);
+    return resposta.resultado[0];
+  })
+  .then((resposta) => {
+    renderizarDados(resposta);
   })
   .catch((err) => {
     console.log(err);
   });
 
 function renderizarDados(dados) {
-  let img = dados.resultado[0].imagem.media;
-  let completeName = `${dados.resultado[0].nome.primero} ${dados.resultado[0].nome.ultimo}`;
-  let mail = dados.resultado[0].email;
+  let img = dados.imagem.media;
+  let completeName = ` ${dados.nome.titulo} ${dados.nome.primeiro} ${dados.nome.ultimo}`;
+  let mail = dados.email;
 
   let card = document.querySelector(".tarjeta");
 
@@ -96,6 +99,3 @@ function renderizarDados(dados) {
     <h2>${completeName}</h2>
     <p>${mail}</p>`;
 }
-renderizarDados(baseDeDados);
-
-// loadBtn.addEventListener("click", renderizarDados(baseDeDados));

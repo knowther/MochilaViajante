@@ -1,113 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;1,400;1,500&family=Julius+Sans+One&family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;1,400;1,500&family=Julius+Sans+One&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body{
-    background-image: url('https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2018/12/11/770738/20181211222403345461i.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2018/12/11/770738/20181211222403345461i.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-a{
-    color: #202124;
+a {
+  color: #202124;
 }
 
-header{
-    background-color: #202124;
-    text-align: center;
-    padding: 10px 15px;
-    position: fixed;
-    width: 100%;
+header {
+  background-color: #202124;
+  text-align: center;
+  padding: 10px 15px;
+  position: fixed;
+  width: 100%;
 }
 
-footer{
-    background-color: #202124;
-    height: 80px;
+footer {
+  background-color: #202124;
 }
 
-.text{
-    font-family: 'Archivo Narrow';
-    font-weight: 600;
-    font-size: 18px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+.text {
+  font-family: "Archivo Narrow";
+  font-weight: 600;
+  font-size: 18px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.bold{
-    font-weight: 900;
+.bold {
+  font-weight: 900;
 }
 
-.title{
-    font-family: 'Julius Sans One', sans-serif;
-    color: #FFF;
+.title {
+  font-family: "Julius Sans One", sans-serif;
+  color: #fff;
 }
-.listTitle{
-    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.listTitle {
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.city-intro{
-    padding: 100px;
-    text-align: center;
-}
-
-.cityVideo{
-    display: block;
-    margin:  0 auto;
-    margin-bottom: 20px;
+.city-intro {
+  padding: 100px 50px 50px 50px;
+  text-align: center;
 }
 
-.curiosity{
-    text-align: center;
-    padding: 10px;
+.figureOut {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  border-radius: 4px;
+  padding: 10px 30px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
 }
 
-.icons{
-    padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    
+.figureOut a {
+  display: block;
+  font-size: 18px;
+  font-family: "Archivo Narrow";
 }
 
-.icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: white;
-    text-align: center;
+.divButton {
+  text-align: center;
 }
-.icon .text{
+
+.figureOut:hover {
+  transform: scale(1.02);
+}
+
+.cityVideo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.curiosity {
+  text-align: center;
+  padding: 10px;
+}
+
+.icons {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+.icon .text {
   position: relative;
   top: 2px;
   right: 8px;
 }
 
-.fab{
-    font-size: 24px;
+.fab {
+  font-size: 24px;
 }
 
-.ballIcons{
-    margin-top: 8px;
+.ballIcons {
+  margin-top: 8px;
 }
 
-.curiosity{
-    margin-bottom: 15px;
+.curiosity {
+  margin-bottom: 15px;
 }
-
 
 /* class recomended by google */
 .material-icons .fab {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }

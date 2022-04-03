@@ -1,10 +1,10 @@
 
 function multiploN1(){
-    return 'Fizz';
+    return 'Multiplo do 1º número';
 }
 
 function multiplosN2(){
-    return 'Buzz';
+    return 'Multiplo do 2º número';
 }
 
 

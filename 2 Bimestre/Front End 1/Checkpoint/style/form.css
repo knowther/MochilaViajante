@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;1,400;1,500&family=Julius+Sans+One&family=Roboto:wght@500&display=swap");
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  animation-name: logo;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  position: absolute;
+  z-index: 1000;
+}
+
+@keyframes logo {
+  0% {
+    transform: translate(0, -15px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, -15px);
+  }
+}
+
+fieldset {
+  border-radius: 4px;
+  border: 0.1px solid rgb(199, 198, 198);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+fieldset label {
+  font-family: "Julius Sans One";
+  font-weight: 700;
+}
+
+input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px gray solid;
+  outline: none;
+  font-family: "Archivo Narrow";
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+input:hover {
+  transform: scale(1.02);
+}
+
+#cpf:focus,
+#obs {
+  grid-column: 1/ -1;
+  outline: none;
+  border-radius: 4px;
+  resize: none;
+}
+
+.infinite {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background-color: #525252;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  margin: 0 auto;
+  transform: perspective(500px) rotateX(30deg);
+}
+
+.infinite::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 70%,
+    #525252 70%,
+    #525252 100%
+  );
+  background-size: 120px;
+  animation: animate 0.5s linear infinite;
+}
+
+.infinite::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: #333;
+  bottom: -30px;
+  transform-origin: top;
+  transform: perspective(500px) rotateX(-25deg);
+}
+
+.shadow{
+  position: absolute;
+  bottom: -93px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  background: linear-gradient(#000, transparent);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -120px;
+  }
+}
+
+select {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 2/3;
+}
+
+.travelDate {
+  grid-column: 1/-1;
+}
+
+form {
+  grid-column: 2/3;
+}
