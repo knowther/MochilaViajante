@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Astronalta</title>
+</head>
+
+<body>
+    <h1>Cadastro da liga dos astronaltas</h1>
+    <form action="">
+        <div class="nome">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <hr>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="pswd">Senha:</label>
+            <input type="password" name="pswd" id="pswd">
+        </div>
+        <hr>
+        <div>
+            <label for="birthDate">Data de nascimento:</label>
+            <input type="date" name="birthDate" id="birthDate">
+            <label for="pic">Foto:</label>
+            <input type="file">
+        </div>
+        <hr>
+        <div>
+            <label for="nationality">Nacionalidade:</label>
+            <select name="nationality" id="nationality">
+                <optgroup label="Europa">
+                    <option value="">Rússia</option>
+                    <option value="">Portugal</option>
+                </optgroup>
+                <optgroup label="América do Sul">
+                    <option value="">Brasil</option>
+                    <option value="">Chile</option>
+                </optgroup>
+            </select>
+            <label for="gender">Gênero:</label>
+            <input type="radio" name="gender" id="gender"><span>M</span>
+            <input type="radio" name="gender" id="gender"><span>F</span>
+        </div>
+        <hr>
+        <div>
+            <p>Suas principais qualidades?</p>
+            <label for="qualitys"></label>
+            <input type="checkbox" name="qualitys" id="qualitys"><span>Inteligência</span>
+            <input type="checkbox" name="qualitys" id="qualitys"><span>Resiliência</span>
+            <input type="checkbox" name="qualitys" id="qualitys"><span>Preparo Físico</span>
+            <input type="checkbox" name="qualitys" id="qualitys"><span>Educação</span>
+        </div>
+        <hr>
+        <textarea name="why" id="why" rows="8" cols="40" placeholder="Porque você gostaria de ser um astronalta?" style="display: block;"></textarea>
+        <input type="submit" value="Criar">
+    </form>
+</body>
+
+</html>

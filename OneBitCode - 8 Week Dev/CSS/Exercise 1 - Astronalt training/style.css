@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(40, 40, 88);
+}
+
+.listTitle {
+  background-color: yellow;
+  border: 3px solid black;
+}
+
+h1 {
+  color: white;
+}
+
+h1 + h4 {
+  color: yellow;
+}
+
+ul li {
+  color: white;
+}
+
+.evenList li:nth-of-type(even) {
+  color: red;
+}

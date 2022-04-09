@@ -9,6 +9,7 @@ searchBtn.addEventListener("click", (e) => {
     response.innerHTML = "";
     fetch(`https://dog.ceo/api/breeds/image/random/${numberInpt.value}`)
       .then((resultado) => {
+        console.log(resultado);
         return resultado.json();
       })
       .then((resultado) => {

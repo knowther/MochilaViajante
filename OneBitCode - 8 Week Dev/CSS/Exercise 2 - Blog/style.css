@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400&family=Roboto&display=swap");
+section {
+  padding: 30px 150px;
+}
+
+section .posts {
+  margin: 0 auto;
+}
+
+section .posts .content {
+  padding: 15px;
+  background-color: #fffafa;
+}
+
+section .posts .content .postBlog {
+  margin: 0px 30px;
+}
+
+section .posts .content .postTitle {
+  font-family: Roboto;
+}
+
+section .posts .content .postDate {
+  font-family: Oswald, Impact, Haettenschweiler, "Arial Narrow Bold";
+  color: #008080;
+}
+
+section .posts .content p {
+  font-family: "Open Sans";
+}
+/*# sourceMappingURL=style.css.map */
