@@ -36,11 +36,16 @@
         </div>
         </div>
         </div>
+
     </nav>
+
     <main>
         <article>
+           
             <div class="columns">
+
                 <div class="column is-3-desktop is-4-mobile is-offset-1">
+
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -61,14 +66,14 @@
                             <div class="card-header-title">Contato</div>
                             <div class="card-content">
                                 <div class="field">
-                                    <label class="label">Name</label>
-                                    <input type="text" class="input is-normal" placeholder="Insira seu nome...">
+                                    <label for="name" class="label">Name</label>
+                                    <input id="name" type="text" class="input is-normal" placeholder="Insert your name...">
                                 </div>
 
                                 <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="email" placeholder="Email input" value="hello@">
+                                    <label for="email" class="label">Email</label>
+                                    <div id="controlMail" class="control has-icons-left has-icons-right">
+                                        <input id="email" class="input" type="email" placeholder="johnnywesley@example.com">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-envelope"></i>
                                         </span>
@@ -76,11 +81,11 @@
                                             <i class="fas fa-exclamation-triangle"></i>
                                         </span> -->
                                     </div>
-                                    <!-- <p class="help is-danger">This email is invalid</p> -->
+                                    <p class="help is-danger"></p>
                                 </div>
                                 <div class="field">
                                     <label class="label">Mensagem</label>
-                                    <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+                                    <textarea class="textarea" placeholder="Write here your message..."></textarea>
                                 </div>
 
                                 <div class="field is-grouped">
@@ -100,6 +105,9 @@
 
         </article>
     </main>
+
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/utils/validations.js"></script>
 
 </body>
 
