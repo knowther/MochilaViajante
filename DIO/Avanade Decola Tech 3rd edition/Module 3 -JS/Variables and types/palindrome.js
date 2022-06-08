@@ -31,7 +31,7 @@ function replaceSpecialChars(str) {
 
 function isLetter(string) {
   if (!string || isNumber(string)) {
-    console.log("It isn't a text! Please, don't try to trick my program.");
+    console.log(new TypeError("It isn't a text! Please, don't try to trick my program."));
   } else {
     let removeSpecial = replaceSpecialChars(string);
     let originalPalindrome = removeSpecial.split("").filter((el) => el !== " ");
