@@ -30,16 +30,15 @@ function replaceSpecialChars(str) {
 }
 
 function isLetter(string) {
-  if (!string || isNumber(string)) {
-    console.log(new TypeError("It isn't a text! Please, don't try to trick my program."));
-  } else {
+  !string || isNumber(string) ? console.log(new TypeError("It isn't a text! Please, don't try to trick my program.")) : verifyPalindrome(string);
+}
+  function verifyPalindrome(string){
     let removeSpecial = replaceSpecialChars(string);
     let originalPalindrome = removeSpecial.split("").filter((el) => el !== " ");
     let reversePalindrome = originalPalindrome.slice().reverse();
-    console.log(`${originalPalindrome} | ${reversePalindrome}`);
     originalPalindrome.toString().toUpperCase() ==
     reversePalindrome.toString().toUpperCase()
       ? console.log(`Yes!! ${string} is a palindrome.`)
       : console.log("Nop!, try again.");
   }
-}
+    
