@@ -59,13 +59,65 @@ const App = () => {
         <View style={style.containerActivity}>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+        </View>
+        <View style={style.containerActivity}>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+        </View>
+        <View style={style.containerActivity}>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+        </View>
+        <View style={style.containerActivity}>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
@@ -87,30 +139,16 @@ const App = () => {
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
-        </View>
-        <View style={style.containerActivity}>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
         </View>
         <View style={style.containerActivity}>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
-          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
@@ -123,9 +161,44 @@ const App = () => {
         <View style={style.containerActivity}>
           <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+        </View>
+        <View style={style.containerActivity}>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+        </View>
+        <View style={style.containerActivity}>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.button]}></Text>
+          <Text style={[style.containerActivity.chosenButton]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
           <Text style={[style.containerActivity.button]}></Text>
@@ -188,7 +261,9 @@ const style = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
   },
+
   containerActivity: {
+
     flexDirection: 'row',
     marginTop: 5,
     button: {
@@ -199,11 +274,11 @@ const style = StyleSheet.create({
       padding: 10,
     },
     chosenButton: {
-    marginLeft: 4,
+      marginLeft: 4,
       height: 10,
       backgroundColor: '#339a67',
       borderRadius: 5,
       padding: 10,
-    }
+    },
   },
 });
