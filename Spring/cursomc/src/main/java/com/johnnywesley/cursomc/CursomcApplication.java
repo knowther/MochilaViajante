@@ -9,8 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.johnnywesley.cursomc.domain.Categoria;
 import com.johnnywesley.cursomc.domain.Cidade;
+import com.johnnywesley.cursomc.domain.Cliente;
 import com.johnnywesley.cursomc.domain.Estado;
 import com.johnnywesley.cursomc.domain.Produto;
+import com.johnnywesley.cursomc.domain.enums.TipoCliente;
 import com.johnnywesley.cursomc.repositories.CategoriaRepository;
 import com.johnnywesley.cursomc.repositories.CidadeRepository;
 import com.johnnywesley.cursomc.repositories.EstadoRepository;
@@ -51,6 +53,10 @@ public class CursomcApplication implements CommandLineRunner {
 		p2.getCategorias().addAll(Arrays.asList(cat1, cat2));
 		p3.getCategorias().addAll(Arrays.asList(cat1));
 		
+
+		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
+		produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
+		
 		Estado estado1 = new Estado(null, "Minas Gerais");
 		Estado estado2 = new Estado(null, "São Paulo");
 		
@@ -66,10 +72,8 @@ public class CursomcApplication implements CommandLineRunner {
 		estadoRepository.saveAll(Arrays.asList(estado1, estado2));
 		cidadeRepository.saveAll(Arrays.asList(cidade1, cidade2, cidade3));
 		
-		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
-		produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
-		
-		
+		Cliente cl1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "123.456.789-10", TipoCliente.PESSOAFISICA);
+		cl1.get
 		
 	}
 
