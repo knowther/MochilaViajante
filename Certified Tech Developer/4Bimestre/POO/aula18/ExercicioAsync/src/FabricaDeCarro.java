@@ -10,20 +10,20 @@ public class FabricaDeCarro {
         return INSTANCE;
     }
 
-    protected int totalCarrosFiat =0;
-    protected int totalCarrosFord = 0;
-    protected int totalCarrosVolks = 0;
+    protected int totalCarrosFiat;
+    protected int totalCarrosFord;
+    protected int totalCarrosVolks;
 
     public String criarCarroVolks(){
-        return new String("Carro Volks #" + totalCarrosVolks++ + " criado");
+        return new String("Carro Volks #" + ++totalCarrosVolks + " criado");
     }
 
     public String criarCarroFord(){
-        return new String("Carro Ford #" + totalCarrosFord++ + " criado");
+        return new String("Carro Ford #" + ++totalCarrosFord + " criado");
     }
 
     public String criarCarroFiat(){
-        return new String("Carro Fiat #" + totalCarrosFiat++ + " criado");
+        return new String("Carro Fiat #" + ++totalCarrosFiat + " criado");
     }
 
     public String gerarRelatorio(){
