@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a18b907-4d82-4022-b60c-9acf4043fe50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/__test__/util.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../aula16/TimeFutebol/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula16/TimeFutebol/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/__test__/util.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/__test__/util.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../QA/Aula 15/Exemplo1/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Egjl2FFebjRA8CGJHRzqQl5eLt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,7 +30,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/DH/MochilaViajante/Certified Tech Developer/4Bimestre/POO/aula18/untitled"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
