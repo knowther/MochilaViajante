@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.2 on win32)" generated="20220920 22:40:37.254" rpa="false" schemaversion="3">
+<suite id="s1" name="QA" source="D:\DH\MochilaViajante\Certified Tech Developer\4Bimestre\QA">
+<suite id="s1-s1" name="Aula21" source="D:\DH\MochilaViajante\Certified Tech Developer\4Bimestre\QA\Aula21">
+<suite id="s1-s1-s1" name="Jouse" source="D:\DH\MochilaViajante\Certified Tech Developer\4Bimestre\QA\Aula21\jouse.robot">
+<test id="s1-s1-s1-t1" name="Teste acessar loja" line="6">
+<kw name="Acessar a loja da jouse" library="jouse">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220920 22:40:37.596" level="INFO">Opening browser 'Chrome' to base url 'http://www.jouse.com.br'.</msg>
+<status status="PASS" starttime="20220920 22:40:37.596" endtime="20220920 22:40:40.648"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220920 22:40:40.648" endtime="20220920 22:40:40.774"/>
+</kw>
+<status status="PASS" starttime="20220920 22:40:37.595" endtime="20220920 22:40:40.774"/>
+</kw>
+<kw name="Clicar em compre agora" library="jouse">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_COMPRE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220920 22:40:40.777" level="INFO">Clicking element 'css=.jss24:nth-child(2) &gt; .jss14'.</msg>
+<status status="PASS" starttime="20220920 22:40:40.776" endtime="20220920 22:40:40.907"/>
+</kw>
+<status status="PASS" starttime="20220920 22:40:40.775" endtime="20220920 22:40:40.907"/>
+</kw>
+<status status="PASS" starttime="20220920 22:40:37.593" endtime="20220920 22:40:40.908"/>
+</test>
+<status status="PASS" starttime="20220920 22:40:37.340" endtime="20220920 22:40:40.911"/>
+</suite>
+<status status="PASS" starttime="20220920 22:40:37.336" endtime="20220920 22:40:40.916"/>
+</suite>
+<status status="PASS" starttime="20220920 22:40:37.311" endtime="20220920 22:40:40.919"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QA">QA</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Aula21">QA.Aula21</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Jouse">QA.Aula21.Jouse</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
