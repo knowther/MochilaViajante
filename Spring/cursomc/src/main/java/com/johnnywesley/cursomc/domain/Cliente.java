@@ -15,6 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.johnnywesley.cursomc.domain.enums.TipoCliente;
 
 @Entity
@@ -32,6 +33,7 @@ public class Cliente implements Serializable {
 	@CollectionTable(name = "TELEFONE")
 	private Set<String> telefones = new HashSet<>();
 	
+	@JsonManagedReference
 	@OneToMany(mappedBy = "cliente")
 	private List<Endereco> enderecos = new ArrayList<>();
 	
@@ -88,13 +90,6 @@ public class Cliente implements Serializable {
 		this.cpfOrCnpj = cpfOrCnpj;
 	}
 
-	public List<Endereco> getClientes() {
-		return enderecos;
-	}
-
-	public void setClientes(List<Endereco> clientes) {
-		this.enderecos = clientes;
-	}
 
 	public TipoCliente getTipo() {
 		return TipoCliente.toEnum(tipo);
@@ -106,6 +101,30 @@ public class Cliente implements Serializable {
 	
 	
 	
+
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+
+
+
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+
+
+
+	public Set<String> getTelefones() {
+		return telefones;
+	}
+
+
+	public void setTelefones(Set<String> telefones) {
+		this.telefones = telefones;
+	}
+
+
 
 	@Override
 	public int hashCode() {
