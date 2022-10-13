@@ -1,0 +1,25 @@
+.bicicleta {
+  max-width: 100%;
+  display: block;
+}
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+/* efeito galeria */
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media (min-width: 400px) {
+  .minmax img {
+    grid-row: 2;
+  }
+}
