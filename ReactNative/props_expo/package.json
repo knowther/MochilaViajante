@@ -1,5 +1,5 @@
 {
-  "name": "primeiro_projeto",
+  "name": "props_expo",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,14 +9,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~46.0.13",
-    "expo-constants": "~13.2.4",
+    "expo": "~46.0.16",
     "expo-status-bar": "~1.4.0",
-    "expo-updates": "~0.14.6",
     "react": "18.0.0",
-    "react-dom": "^18.2.0",
-    "react-native": "0.69.6",
-    "react-native-web": "~0.18.7"
+    "react-native": "0.69.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
