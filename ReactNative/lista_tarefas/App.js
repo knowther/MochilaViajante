@@ -3,6 +3,8 @@ import { StatusBar } from "expo-status-bar";
 import { AppLoading } from "expo";
 import { useFonts, Lato_400Regular } from "@expo-google-fonts/lato";
 import {
+  Modal,
+  Pressable,
   StyleSheet,
   Text,
   View,
@@ -10,6 +12,8 @@ import {
   Touchable,
   TouchableOpacity,
   ScrollView,
+  Alert,
+  TextInput,
 } from "react-native";
 import { Foundation } from "@expo/vector-icons";
 
@@ -30,8 +34,15 @@ export default function App() {
     },
   ]);
 
+  const [atualTask, setAtualTask] = useState("");
+
   function deletarTarefa(id) {
-    alert("Deseja excluir tarefa:" + id + " ?");
+    alert("Tarefa excluída com sucesso.");
+    let newTasks = tasks.filter(function (val) {
+      return val.id != id;
+    });
+
+    setTasks(newTasks);
   }
 
   let [fontsLoaded] = useFonts({ Lato_400Regular });
@@ -40,8 +51,52 @@ export default function App() {
     <AppLoading />;
   }
 
+  const [modalVisible, setModal] = useState(false);
+
+  function addTask() {
+    setModal(!modalVisible);
+    let id = 0;
+    if (tasks.length > 0) {
+      id = tasks[tasks.length - 1].id + 1;
+      alert(id);
+    }
+    let task = { id: id, task: atualTask };
+
+    setTasks([...tasks, task]);
+    alert("Tarefa adicionada com sucesso:" + `\n"${atualTask}"`);
+  }
+
   return (
-    <ScrollView style={{ flex: 1 }}>
+    <ScrollView style={{ width: "100%", flex: 1 }}>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          if (!atualTask == "") {
+            Alert.alert("Tarefa não adicionada.");
+            setAtualTask("");
+            setModal(!modalVisible);
+          } else {
+            setModal(!modalVisible);
+          }
+        }}
+      >
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <TextInput
+              onChangeText={(text) => setAtualTask(text)}
+              autoFocus={true}
+            ></TextInput>
+            <Pressable
+              style={[styles.button, styles.buttonClose]}
+              onPress={() => addTask()}
+            >
+              <Text style={styles.textStyle}>Adicionar Tarefa</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
       <ImageBackground source={image} style={styles.image}>
         <View style={styles.coverView}>
           <Text style={styles.textHeader}>Lista de tarefas</Text>
@@ -62,6 +117,13 @@ export default function App() {
           </View>
         );
       })}
+
+      <TouchableOpacity
+        style={styles.btnAddTask}
+        onPress={() => setModal(true)}
+      >
+        <Text>Adicionar Tarefa!</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 }
@@ -92,5 +154,57 @@ const styles = StyleSheet.create({
     borderBottomColor: "black",
     flexDirection: "row",
     paddingBottom: 10,
+  },
+  //styles modal
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: -22,
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 35,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+    zIndex: 5,
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2,
+  },
+  buttonOpen: {
+    backgroundColor: "#F194FF",
+  },
+  buttonClose: {
+    backgroundColor: "#2196F3",
+  },
+  textStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: "center",
+  },
+  btnAddTask: {
+    position: "absolute",
+    bottom: -20,
+    width: 200,
+    padding: 8,
+    backgroundColor: "gray",
+    marginTop: 20,
   },
 });
