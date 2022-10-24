@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { AppLoading } from "expo";
 import { useFonts, Lato_400Regular } from "@expo-google-fonts/lato";
@@ -14,25 +14,29 @@ import {
   ScrollView,
   Alert,
   TextInput,
+  Button,
 } from "react-native";
 import { Foundation } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   const image = require("./components/Calendar.jpg");
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      task: "My task 1",
-    },
-    {
-      id: 2,
-      task: "My task 2",
-    },
-    {
-      id: 3,
-      task: "My task 3",
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const readTask = await AsyncStorage.getItem("tasks");
+        if (readTask == null) {
+          setTasks([]);
+        } else {
+          setTasks(JSON.parse(readTask));
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
 
   const [atualTask, setAtualTask] = useState("");
 
@@ -43,13 +47,20 @@ export default function App() {
     });
 
     setTasks(newTasks);
+    (async () => {
+      try {
+        await AsyncStorage.setItem("tasks", JSON.stringify(newTasks));
+      } catch (error) {
+        console.log(error);
+      }
+    })();
   }
 
-  let [fontsLoaded] = useFonts({ Lato_400Regular });
+  // let [fontsLoaded] = useFonts({ Lato_400Regular });
 
-  if (!fontsLoaded) {
-    <AppLoading />;
-  }
+  // if (!fontsLoaded) {
+  //   <AppLoading />;
+  // }
 
   const [modalVisible, setModal] = useState(false);
 
@@ -58,12 +69,16 @@ export default function App() {
     let id = 0;
     if (tasks.length > 0) {
       id = tasks[tasks.length - 1].id + 1;
-      alert(id);
     }
     let task = { id: id, task: atualTask };
-
     setTasks([...tasks, task]);
+    (async () => {
+      try {
+        await AsyncStorage.setItem("tasks", JSON.stringify([...tasks, task]));
+      } catch (error) {}
+    })();
     alert("Tarefa adicionada com sucesso:" + `\n"${atualTask}"`);
+    setAtualTask("");
   }
 
   return (
@@ -74,7 +89,7 @@ export default function App() {
         visible={modalVisible}
         onRequestClose={() => {
           if (!atualTask == "") {
-            Alert.alert("Tarefa não adicionada.");
+            Alert.alert("Tarefa não adicionada, dados perdidos.");
             setAtualTask("");
             setModal(!modalVisible);
           } else {
@@ -113,6 +128,7 @@ export default function App() {
               <TouchableOpacity onPress={() => deletarTarefa(val.id)}>
                 <Foundation name="minus-circle" size={24} color="black" />
               </TouchableOpacity>
+              
             </View>
           </View>
         );
@@ -122,8 +138,9 @@ export default function App() {
         style={styles.btnAddTask}
         onPress={() => setModal(true)}
       >
-        <Text>Adicionar Tarefa!</Text>
+        <Text>+</Text>
       </TouchableOpacity>
+      {/* <Button title="Adicionar Tarefa"></Button> */}
     </ScrollView>
   );
 }
@@ -144,7 +161,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 20,
     marginTop: 20,
-    fontFamily: "Lato_400Regular",
+    // fontFamily: "Lato_400Regular",
   },
   tarefaSingle: {
     alignSelf: "flex-start",
@@ -160,7 +177,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: -22,
+    marginTop: -1,
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   modalView: {
@@ -201,10 +218,12 @@ const styles = StyleSheet.create({
   },
   btnAddTask: {
     position: "absolute",
-    bottom: -20,
-    width: 200,
+    right: 10,
+    top: 5,
+    width: 25,
+    borderRadius: 10,
     padding: 8,
-    backgroundColor: "gray",
+    backgroundColor: "#2196F3",
     marginTop: 20,
   },
 });
