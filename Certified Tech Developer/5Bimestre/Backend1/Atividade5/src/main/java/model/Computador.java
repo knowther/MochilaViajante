@@ -1,12 +1,23 @@
+package model;
+
 public class Computador {
     String tipoComputador;
     private int ram;
     private int hd;
 
+    public static int contador;
+
     public Computador(){}
     public Computador(String tipoComputador) {
         this.tipoComputador = tipoComputador;
 
+    }
+
+    public Computador(String tipoComputador, int ram, int hd) {
+        this.tipoComputador = tipoComputador;
+        this.ram = ram;
+        this.hd = hd;
+        contador++;
     }
 
     public String getTipoComputador() {
@@ -39,7 +50,7 @@ public class Computador {
 
     @Override
     public String toString() {
-        return "Computador{" +
+        return "model.Computador{" +
                 "tipoComputador='" + tipoComputador + '\'' +
                 ", ram=" + ram +
                 ", hd=" + hd +

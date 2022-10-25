@@ -1,3 +1,7 @@
+package service.impl;
+
+import model.Voo;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -15,7 +19,7 @@ public class VoosService {
             if(v.getDataPartida().equals(dataPartida) && v.getDataRetorno().equals(dataRetorno) && v.getOrigem().equalsIgnoreCase(origem) && v.getDestino().equalsIgnoreCase(destino)){
                 voo = v;
             }else{
-                System.out.println("Voo não encontrado.");
+                System.out.println("model.Voo não encontrado.");
             }
         }
         return voo;

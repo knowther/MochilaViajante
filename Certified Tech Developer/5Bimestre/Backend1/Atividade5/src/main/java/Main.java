@@ -1,20 +1,21 @@
+import factory.ComputadorFactory;
+import model.Computador;
+import model.Computadores;
+
 public class Main {
 
     public static void main(String[] args) {
         final ComputadorFactory computador = new ComputadorFactory();
 
-        Computador computador1 = computador.getComputador("Windows");
-        computador1.setHd(128);
-        computador1.setRam(16);
+        for(int i = 1; i < 1000000; i++){
+            computador.getComputador("Windows", 128, 16);
 
-        Computador computador2 = computador.getComputador("Mac");
-        computador2.setHd(500);
-        computador2.setRam(8);
+            computador.getComputador("Mac", 500, 8);
+        }
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println(Computador.contador);
+        System.out.println(Computadores.getComputadores().size());
+        System.out.println("Memória utilizada: " + (runtime.totalMemory() - runtime.freeMemory()) / (1024 * 1024));
 
-        final Computador computador3 = computador.getComputador("Windows");
-        System.out.println(computador2);
-
-        final Computador computador4 = computador.getComputador("Mac");
-        System.out.println(computador4);
     }
 }

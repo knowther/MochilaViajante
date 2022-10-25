@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Hotel {
@@ -38,7 +40,7 @@ public class Hotel {
 
     @Override
     public String toString() {
-        return "Hotel{" +
+        return "model.Hotel{" +
                 "dataEntrada=" + dataEntrada +
                 ", dataSaida=" + dataSaida +
                 ", cidade='" + cidade + '\'' +

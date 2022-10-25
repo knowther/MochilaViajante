@@ -1,3 +1,7 @@
+package service.impl;
+
+import model.Hotel;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -14,7 +18,7 @@ public class HotelService {
             if(h.getDataEntrada().equals(dataPartida) && h.getDataSaida().equals(dataRetorno) && h.getCidade().equalsIgnoreCase(cidade)){
                 hotel = h;
             }else{
-                System.out.println("Hotel não encotrado.");
+                System.out.println("model.Hotel não encotrado.");
             }
         }
         return hotel;

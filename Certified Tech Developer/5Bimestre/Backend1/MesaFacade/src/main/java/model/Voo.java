@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Voo {
@@ -50,7 +52,7 @@ public class Voo {
 
     @Override
     public String toString() {
-        return "Voo{" +
+        return "model.Voo{" +
                 "dataPartida=" + dataPartida +
                 ", dataRetorno=" + dataRetorno +
                 ", origem='" + origem + '\'' +
