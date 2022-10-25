@@ -1,0 +1,10 @@
+[2022-10-25 17:12:03] [ INFO ] [Main:6] Começamos nosso método MAIN
+[2022-10-25 17:12:03] [ ERROR] [Main:11] Erro ao dividir por zero
+java.lang.ArithmeticException: / by zero
+	at Main.main(Main.java:9)
+[2022-10-25 17:12:03] [ WARN ] [Main:13] Aviso, o método MAIN está prestes a terminar
+[2022-10-25 17:12:03] [ DEBUG] [Main:14] Isso será mostrado apenas se o infoLogger estiver em DEBUG
+[2022-10-25 17:12:03] [ INFO ] [Main:15] Finalizamos a thread MAIN
+[2022-10-25 17:44:23] [ INFO ] [ListaInteiros:13] O comprimento da lista é maior que 5.
+[2022-10-25 17:44:41] [ INFO ] [ListaInteiros:13] O comprimento da lista é maior que 5.
+[2022-10-25 17:44:42] [ INFO ] [ListaInteiros:30] A média dos números é 5
