@@ -40,3 +40,69 @@ java.lang.ArithmeticException: / by zero
 [2022-10-25 18:02:49] [ INFO ] [ListaMaximo:32] O maior número da lista é 42
 [2022-10-25 18:02:49] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
 [2022-10-25 18:02:49] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 22:00:35] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:00:35] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 22:00:35] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:00:35] [ INFO ] [ListaMaximo:32] O maior número da lista é 42
+[2022-10-25 22:00:35] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 22:00:35] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 22:01:03] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:01:03] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 22:01:03] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:01:03] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 22:01:03] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 22:01:03] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 22:02:53] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:02:53] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 22:02:53] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:02:53] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 22:02:53] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 22:02:53] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 22:06:14] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:06:14] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 22:06:14] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 22:06:14] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 22:06:14] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 22:06:14] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:21:30] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:21:30] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:21:30] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:21:30] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:21:30] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:21:30] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:24:36] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:36] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:24:36] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:36] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:24:36] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:36] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:24:49] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:49] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:24:49] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:49] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:24:49] [ INFO ] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:24:49] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:27:00] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:27:00] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:27:00] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:27:00] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:27:00] [ DEBUG] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:27:00] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:29:26] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:26] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:29:26] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:26] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:29:26] [ DEBUG] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:26] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:29:52] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:52] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:29:52] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:52] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:29:52] [ DEBUG] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:29:52] [ INFO ] [ListaMaximo:34] O menor número da lista é 2
+[2022-10-25 23:30:10] [ INFO ] [ListaMedia:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:30:10] [ INFO ] [ListaMedia:30] A média dos números é 5
+[2022-10-25 23:30:10] [ INFO ] [ListaMaximo:13] O comprimento da lista é maior que 5.
+[2022-10-25 23:30:10] [ INFO ] [ListaMaximo:32] O maior número da lista é 89
+[2022-10-25 23:30:10] [ DEBUG] [ListaMaximo:15] O comprimento da lista é maior que 5.
+[2022-10-25 23:30:10] [ INFO ] [ListaMaximo:34] O menor número da lista é 2

@@ -9,7 +9,6 @@ import {
   Text,
   View,
   ImageBackground,
-  Touchable,
   TouchableOpacity,
   ScrollView,
   Alert,

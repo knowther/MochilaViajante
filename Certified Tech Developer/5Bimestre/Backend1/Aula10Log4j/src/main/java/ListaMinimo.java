@@ -12,9 +12,9 @@ public class ListaMinimo {
     public ListaMinimo(List<Integer> inteiros) {
         this.inteiros = inteiros;
         if(this.inteiros.size()> 5){
-            logger.info("O comprimento da lista é maior que 5.");
+            logger.debug("O comprimento da lista é maior que 5.");
         }else if(inteiros.size() > 10){
-            logger.info("O comprimento da lista é maior que 10.");
+            logger.debug("O comprimento da lista é maior que 10.");
         }
         calcularMinimo();
         if(inteiros.size() == 0){
