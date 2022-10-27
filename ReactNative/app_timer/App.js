@@ -9,11 +9,12 @@ import {
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { LinearGradient } from "expo-linear-gradient";
+import Contador from "./Contador";
 
 export default function App() {
   console.disableYellowBox = true;
   const [state, setState] = useState("selecionar");
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(1);
   const [minutes, setMinutes] = useState(0);
 
   const [alarmSound, setAlarmSound] = useState([
@@ -21,26 +22,30 @@ export default function App() {
       id: 1,
       selected: true,
       sound: "alarm 1",
-      file: "alarm1.mp3",
+      file: require("./assets/alarme1.mp3"),
     },
 
     {
       id: 2,
       selected: false,
       sound: "alarm 2",
-      file: "alarm2.mp3",
+      file: require("./assets/alarme2.mp3"),
     },
     {
       id: 3,
       selected: false,
       sound: "alarm 3",
-      file: "alarm2.mp3",
+      file: require("./assets/alarme3.mp3"),
     },
   ]);
 
   var numeros = [];
   for (var i = 1; i <= 60; i++) {
-    numeros.push(i);
+    if (i < 10) {
+      numeros.push(`${0}${i}`);
+    } else {
+      numeros.push(i);
+    }
   }
 
   var setarAlarm = (id) => {
@@ -77,6 +82,7 @@ export default function App() {
             selectedValue={minutes}
             onValueChange={(itemValue) => setMinutes(itemValue)}
           >
+            <Picker.Item label="00" value="00" />
             {numeros.map(function (val) {
               return (
                 <Picker.Item label={val.toString()} value={val.toString()} />
@@ -89,7 +95,6 @@ export default function App() {
             selectedValue={seconds}
             onValueChange={(itemValue) => setSeconds(itemValue)}
           >
-            <Picker.Item label="0" value="0" />
             {numeros.map(function (val) {
               return (
                 <Picker.Item label={val.toString()} value={val.toString()} />
@@ -112,7 +117,7 @@ export default function App() {
             } else {
               return (
                 <TouchableOpacity
-                key={val.id}
+                  key={val.id}
                   onPress={() => setarAlarm(val.id)}
                   style={styles.btnEscolher}
                 >
@@ -141,9 +146,14 @@ export default function App() {
     );
   } else if (state == "iniciar") {
     return (
-      <View>
-        <Text>Iniciado</Text>
-      </View>
+      <Contador
+        alarm={alarmSound}
+        setMinutes={setMinutes}
+        setSeconds={setSeconds}
+        setState={setState}
+        minutes={minutes}
+        seconds={seconds}
+      ></Contador>
     );
   }
 }
