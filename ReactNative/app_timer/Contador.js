@@ -2,6 +2,8 @@ import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useEffect } from "react";
 import { Audio } from "expo-av";
+import * as BackgroundFetch from "expo-background-fetch";
+import { TaskManager } from "expo-task-manager";
 export default function Contador(props) {
   var done = false;
   useEffect(() => {
@@ -28,8 +30,8 @@ export default function Contador(props) {
   let resetar = () => {
     alert("Tempo concluído");
     props.setState("selecionar");
-    props.setMinutes(1);
-    props.setSeconds(0);
+    props.setMinutes(0);
+    props.setSeconds(1);
   };
 
   async function playSound() {

@@ -41,11 +41,7 @@ export default function App() {
 
   var numeros = [];
   for (var i = 1; i <= 60; i++) {
-    if (i < 10) {
-      numeros.push(`${0}${i}`);
-    } else {
-      numeros.push(i);
-    }
+    numeros.push(i);
   }
 
   var setarAlarm = (id) => {
@@ -78,14 +74,23 @@ export default function App() {
         <View style={{ flexDirection: "row", paddingLeft: 50 }}>
           <Text style={{ color: "white", paddingTop: 16 }}>Min:</Text>
           <Picker
-            style={{ height: 50, width: 100, color: "white" }}
+            style={{
+              height: 50,
+              width: 100,
+              color: "white",
+            }}
             selectedValue={minutes}
             onValueChange={(itemValue) => setMinutes(itemValue)}
           >
             <Picker.Item label="00" value="00" />
             {numeros.map(function (val) {
               return (
-                <Picker.Item label={val.toString()} value={val.toString()} />
+                <Picker.Item
+                  label={`${
+                    val < 10 ? `${0}${val.toString()}` : val.toString()
+                  }`}
+                  value={val.toString()}
+                />
               );
             })}
           </Picker>
@@ -97,7 +102,12 @@ export default function App() {
           >
             {numeros.map(function (val) {
               return (
-                <Picker.Item label={val.toString()} value={val.toString()} />
+                <Picker.Item
+                  label={`${
+                    val < 10 ? `${0}${val.toString()}` : val.toString()
+                  }`}
+                  value={val.toString()}
+                />
               );
             })}
           </Picker>
