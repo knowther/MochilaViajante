@@ -1,0 +1,4 @@
+[2022-10-27 21:49:42] [ INFO ] [Main:22] Iniciando Conexão com o banco de dados.
+[2022-10-27 21:49:42] [ INFO ] [Main:24] Criando tabela Fiuras
+[2022-10-27 21:49:42] [ INFO ] [Main:26] Inserindo valores na tabela.
+[2022-10-27 21:49:42] [ INFO ] [Main:28] Retornando os resultados da query.
