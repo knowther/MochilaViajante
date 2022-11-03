@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Paciente;
+--DROP TABLE IF EXISTS Paciente;
 CREATE TABLE IF NOT EXISTS Paciente (
 id INT auto_increment PRIMARY KEY,
 nome VARCHAR(120) NOT NULL,

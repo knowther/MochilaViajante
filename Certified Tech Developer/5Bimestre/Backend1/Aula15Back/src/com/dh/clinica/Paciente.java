@@ -18,6 +18,15 @@ public class Paciente {
         Endereco = endereco;
     }
 
+    public Paciente(int id, String nome, String sobrenome, String rg, LocalDate dataCadastro, String endereco) {
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.rg = rg;
+        this.dataCadastro = dataCadastro;
+        Endereco = endereco;
+    }
+
     public int getId() {
         return id;
     }

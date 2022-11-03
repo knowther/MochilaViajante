@@ -25,3 +25,7 @@
 03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
 03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:31 - Abrindo conexão.
 03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 16:31 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:35 - Abrindo conexão.
+03/11/22 16:31 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:48 - Fechando conexão.
+03/11/22 16:49 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:35 - Abrindo conexão.
+03/11/22 16:49 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:48 - Fechando conexão.

@@ -10,7 +10,11 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 public class PacienteDaoH2 implements IDao<Paciente> {
 
@@ -51,4 +55,67 @@ public class PacienteDaoH2 implements IDao<Paciente> {
         }
         return paciente;
     }
+
+    @Override
+    public Optional<Paciente> buscar(Integer id) {
+        logger.debug("Buscando paciente com id: " + id);
+        final String sqlGet = String.format("SELECT * FROM Paciente WHERE Paciente.id = '%s'", id);
+        Paciente paciente = null;
+        try{
+            Connection connection = getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sqlGet);
+            while (resultSet.next()){
+                paciente = createPacienteObject(resultSet);
+            }
+            statement.close();
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+        return paciente != null ? Optional.of(paciente) : Optional.empty();
+    }
+    private Paciente createPacienteObject(ResultSet resultSet) throws SQLException{
+        Integer idPaciente = resultSet.getInt("id");
+        String nome = resultSet.getString("nome");
+        String sobrenome = resultSet.getString("sobrenome");
+        String rg = resultSet.getString("rg");
+        LocalDate dataCadastro = resultSet.getDate("dataCadastro").toLocalDate();
+        String endereco = resultSet.getString("endereco");
+        return new Paciente(idPaciente, nome, sobrenome, rg, dataCadastro, endereco);
+    }
+
+    @Override
+    public void excluir(Integer id) {
+        logger.debug("Excluindo paciente com id: " + id);
+        final String sqlDelete = String.format("DELETE FROM Paciente WHERE Paciente.id = %s", id);
+
+        try{
+            Connection connection = getConnection();
+            Statement statement = connection.createStatement();
+            statement.executeUpdate(sqlDelete);
+            statement.close();
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public List<Paciente> buscarTodos() {
+        logger.debug("Buscando todos paciente");
+        String query = "SELECT * FROM Paciente";
+        List<Paciente> pacientes = new ArrayList<>();
+        try{
+            Connection connection = getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()){
+                pacientes.add(createPacienteObject(resultSet));
+            }
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+        return pacientes;
+    }
 }
+
+
