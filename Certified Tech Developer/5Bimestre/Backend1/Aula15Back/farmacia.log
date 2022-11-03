@@ -1,0 +1,27 @@
+03/11/22 15:04 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:29 - Abrindo conexão.
+03/11/22 15:04 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:41 - Fechando conexão.
+03/11/22 15:05 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:29 - Abrindo conexão.
+03/11/22 15:05 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:41 - Fechando conexão.
+03/11/22 15:05 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:29 - Abrindo conexão.
+03/11/22 15:05 [main] ERROR com.dh.clinica.dao.impl.PacienteDaoH2:35 - Erro ao cadastrar Paciente.
+03/11/22 15:05 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:41 - Fechando conexão.
+03/11/22 15:06 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:29 - Abrindo conexão.
+03/11/22 15:06 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:42 - Fechando conexão.
+03/11/22 15:13 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:26 - Abrindo conexão.
+03/11/22 15:13 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:14 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:26 - Abrindo conexão.
+03/11/22 15:14 [main] ERROR com.dh.clinica.dao.impl.PacienteDaoH2:41 - Erro ao cadastrar Paciente.
+03/11/22 15:14 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:15 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:26 - Abrindo conexão.
+03/11/22 15:15 [main] ERROR com.dh.clinica.dao.impl.PacienteDaoH2:41 - Erro ao cadastrar Paciente.
+03/11/22 15:15 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:18 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:26 - Abrindo conexão.
+03/11/22 15:18 [main] ERROR com.dh.clinica.dao.impl.PacienteDaoH2:41 - Erro ao cadastrar Paciente.
+03/11/22 15:18 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:19 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:26 - Abrindo conexão.
+03/11/22 15:19 [main] ERROR com.dh.clinica.dao.impl.PacienteDaoH2:41 - Erro ao cadastrar Paciente.
+03/11/22 15:19 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:31 - Abrindo conexão.
+03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.
+03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:31 - Abrindo conexão.
+03/11/22 15:24 [main]  INFO com.dh.clinica.dao.impl.PacienteDaoH2:44 - Fechando conexão.

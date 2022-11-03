@@ -1,0 +1,42 @@
+[2022-11-01 12:15:22] [ INFO ] [Main:39] Fechando conexão com o banco
+[2022-11-01 12:15:40] [ INFO ] [Main:31] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 12:15:40] [ INFO ] [Main:39] Fechando conexão com o banco
+[2022-11-01 12:27:18] [ INFO ] [Main:33] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 12:27:18] [ INFO ] [Main:46] Saldo da conta de: Danielfoi de: 
+[2022-11-01 12:27:18] [ INFO ] [Main:53] Fechando conexão com o banco
+[2022-11-01 13:11:31] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:11:40] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:11:52] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:12:11] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:12:38] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:19:23] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:25:43] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:25:51] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:28:49] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:28:49] [ INFO ] [Main:48] Saldo da conta de: Danielfoi de: 10.0 para: 20.0
+[2022-11-01 13:28:49] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:29:23] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:29:23] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: 10.0R$ para: 20.0R$
+[2022-11-01 13:29:23] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:29:52] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:29:52] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: R$10.0 para: R$20.0
+[2022-11-01 13:29:52] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:30:25] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:30:25] [ WARN ] [Main:43] Mudando saldo da conta.
+[2022-11-01 13:30:25] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: R$10.0 para: R$20.0
+[2022-11-01 13:30:25] [ INFO ] [Main:55] Fechando conexão com o banco
+[2022-11-01 13:40:27] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:40:27] [ WARN ] [Main:43] Mudando saldo da conta.
+[2022-11-01 13:40:27] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: R$10.0 para: R$20.0
+[2022-11-01 13:40:27] [ WARN ] [Main:52] Mudando saldo da conta.
+[2022-11-01 13:40:27] [ INFO ] [Main:61] Fechando conexão com o banco
+[2022-11-01 13:41:04] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:41:04] [ WARN ] [Main:43] Mudando saldo da conta.
+[2022-11-01 13:41:04] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: R$10.0 para: R$20.0
+[2022-11-01 13:41:04] [ WARN ] [Main:52] Mudando saldo da conta.
+[2022-11-01 13:41:04] [ INFO ] [Main:61] Fechando conexão com o banco
+[2022-11-01 13:41:37] [ INFO ] [Main:35] Criando conta: Daniel - 412587-X - 10.0
+[2022-11-01 13:41:37] [ WARN ] [Main:43] Mudando saldo da conta.
+[2022-11-01 13:41:37] [ INFO ] [Main:48] Saldo da conta de: Daniel foi de: R$10.0 para: R$20.0
+[2022-11-01 13:41:37] [ WARN ] [Main:52] Mudando saldo da conta.
+[2022-11-01 13:41:37] [ INFO ] [Main:62] Fechando conexão com o banco
