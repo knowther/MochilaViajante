@@ -1,5 +1,5 @@
 {
-  "name": "app_calc",
+  "name": "webview_app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "expo": "~46.0.16",
-    "expo-constants": "~13.2.4",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
-    "react-native": "0.69.6"
+    "react-native": "0.69.6",
+    "react-native-webview": "11.23.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
