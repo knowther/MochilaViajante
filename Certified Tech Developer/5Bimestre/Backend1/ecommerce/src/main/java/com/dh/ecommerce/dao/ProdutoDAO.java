@@ -7,13 +7,16 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ProdutoDAO {
+    public static List<Produto> listProduto =  new ArrayList<>();
 
-    public void salvar(){
-        System.out.println();
+    public List<Produto> buscar(){
+        return listProduto;
+
     }
 
-    public List<Produto> buscarTodos(){
-        return Arrays.asList(new Produto());
+    public Produto salvar(Produto produto){
+        listProduto.add(produto);
+        return produto;
     }
 
 }

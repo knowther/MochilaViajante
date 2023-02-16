@@ -1,7 +1,11 @@
 package com.dh.ecommerce.controller;
 
 import com.dh.ecommerce.model.Produto;
+import com.dh.ecommerce.model.dto.ProdutoDTO;
+import com.dh.ecommerce.service.ProdutoService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/produto")
@@ -12,14 +16,16 @@ public class ProdutoController {
 //        return "Numero pedido: " + numPedido + " nome usuario: " + nomeUsuario;
 //    }
 
-    @GetMapping("/buscar")
-    public String buscar(@RequestParam("numPedido") int numPedido, @RequestParam("nomeUsuario") String nomeUsuario){
-        return "Numero pedido: " + numPedido + " nome usuario: " + nomeUsuario;
+    ProdutoService service = new ProdutoService();
+
+    @GetMapping()
+    public List<ProdutoDTO> buscarSegundo(){
+        return service.buscar();
     }
 
-    @PostMapping("/salvar")
-    public Produto salvar(){
-        return new Produto();
+    @PostMapping()
+    public Produto salvar(@RequestBody Produto produto){
+        return service.salvar(produto);
     }
 
     @DeleteMapping("/deletar")
