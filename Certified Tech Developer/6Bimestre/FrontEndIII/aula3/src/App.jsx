@@ -1,32 +1,15 @@
 import { useState } from "react";
-import worldImage from "./assets/mundo.png";
+import appCss from "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <div
-        style={{
-          backgroundColor: "#0B973A",
-          textAlign: "center",
-          color: "white",
-          padding: "35px",
-        }}
-      >
-        Mesa de trabalho 3
-      </div>
-      <h1
-        style={{
-          textAlign: "center",
-          fontSize: "25px",
-          fontWeight: 400,
-          marginTop: "30px",
-        }}
-      >
-        Lorem Ipsum
-      </h1>
-      <div style={{ margin: "50px", textAlign: "justify" }}>
+      <header className="header">Mesa de trabalho 3</header>
+
+      <h1 className="title">Lorem Ipsum</h1>
+      <div style={{ marginLeft: "50px", marginTop: "30px", textAlign: "justify" }}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare
@@ -81,19 +64,7 @@ function App() {
         </p>
       </div>
 
-      <div
-        style={{
-          position: 'absolute',
-          width:'100%',
-          bottom:0,
-          backgroundColor: "#0B973A",
-          textAlign: "center",
-          color: "white",
-          padding: "35px",
-        }}
-      >
-        Todos os direitos reservados 2022
-      </div>
+      <footer className="footer">Todos os direitos reservados 2022</footer>
     </div>
   );
 }
