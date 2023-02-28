@@ -9,7 +9,9 @@ function App() {
       <header className="header">Mesa de trabalho 3</header>
 
       <h1 className="title">Lorem Ipsum</h1>
-      <div style={{ marginLeft: "50px", marginTop: "30px", textAlign: "justify" }}>
+      <div
+        style={{ marginLeft: "50px", marginTop: "30px", textAlign: "justify" }}
+      >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare
@@ -59,7 +61,7 @@ function App() {
           aenean et tortor at risus.
         </p>
 
-        <p style={{ fontSize: "18px", marginTop: "30px" }}>
+        <p style={{ marginTop: "30px" }}>
           Equipe: Johnny Wesley, Diogo de Moraes
         </p>
       </div>
