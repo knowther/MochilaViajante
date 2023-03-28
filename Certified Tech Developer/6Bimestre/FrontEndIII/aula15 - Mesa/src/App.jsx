@@ -4,17 +4,17 @@ import { useEffect, useState } from "react";
 function App() {
   const [students, setStudents] = useState([]);
   const [id, setId] = useState("");
-  const [name, setName] = useState("");
+  const [nome, setNome] = useState("");
   const [matricula, setMatricula] = useState("");
-  const [course, setCourse] = useState("");
+  const [curso, setCurso] = useState("");
   const [bimestre, setBimestre] = useState("");
 
   function limpaCampos() {
     setId("");
-    setName("");
-    setCourse("");
+    setNome("");
+    setCurso("");
     setMatricula("");
-    setBismeste("");
+    setBimestre("");
   }
 
   async function getStudents() {
@@ -27,11 +27,12 @@ function App() {
     event.preventDefault();
     try {
       axios.post("https://api-aluno.vercel.app/aluno", {
-        nome: name,
+        nome: nome,
         matricula: matricula,
-        curso: course,
+        curso: curso,
         bimestre: bimestre,
       });
+      limpaCampos();
       getStudents();
     } catch (err) {
       console.log(err);
@@ -50,9 +51,9 @@ function App() {
 
   function preencherForm(student) {
     setId(student._id);
-    setName(student.nome);
+    setNome(student.nome);
     setMatricula(student.matricula);
-    setCourse(student.curso);
+    setCurso(student.curso);
     setBimestre(student.bimestre);
   }
 
@@ -60,9 +61,9 @@ function App() {
     event.preventDefault();
     try {
       await axios.put(`https://api-todo-six.vercel.app/todo/${id}`, {
-        nome: name,
+        nome: nome,
         matricula: matricula,
-        curso: course,
+        curso: curso,
         bimestre: bimestre,
       });
       getStudents();
@@ -83,8 +84,8 @@ function App() {
           id="name"
           type="text"
           placeholder="Insira o nome..."
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={nome}
+          onChange={(event) => setNome(event.target.value)}
         />
 
         <label htmlFor="matricula">Num. Matrícula:</label>
@@ -96,19 +97,28 @@ function App() {
         />
         <br />
         <label htmlFor="course">Curso:</label>
-        <select
+
+        <input
+          id="curso"
+          type="text"
+          value={curso}
+          onChange={(event) => setCurso(event.target.value)}
+        />
+
+        {/* <select
           id="course"
           value={course}
           onChange={(event) => setCourse(event.target.value)}
         >
+          <option value="">Escolha o Curso:</option>
           <option value="Front 3">Front III</option>
           <option value="Infra 2">Infra II</option>
           <option value="UX/UI">UX/UI</option>
-        </select>
+        </select> */}
         <label htmlFor="bimestre">Bimestre:</label>
         <input
           id="bimestre"
-          type="test"
+          type="text"
           value={bimestre}
           onChange={(event) => setBimestre(event.target.value)}
         />

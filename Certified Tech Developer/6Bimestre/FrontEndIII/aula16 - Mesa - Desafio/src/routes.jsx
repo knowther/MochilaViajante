@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import HomePage from "./pages/home";
 
-import FormPage from "./pages/form";
+import FormPage from "./pages/formulario";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/form/:studentID",
+    path: "/formulario/:studentID",
     element: <FormPage />,
   },
 ]);
