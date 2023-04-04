@@ -1,0 +1,45 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #1E1E1E;
+}
+
+img{
+    width: 211px;
+}
+
+.form_div{
+    margin-top: 40px;
+    padding: 30px;
+    border: #454545 1px solid;
+    border-radius: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    background-color: #454545;
+    border-radius: 10px;
+    
+    width: 250px;
+    outline: none;
+    border: 0;
+}
+
+.form input[type=text],
+input[type=password]{
+    padding: 18px;
+    
+}
+
+.form input[type=submit]{
+   padding: 10px;
+}
+
+
